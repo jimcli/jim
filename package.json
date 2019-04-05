@@ -1,0 +1,19 @@
+{
+  "name": "@jimcli/jim",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimcli/jim.git"
+  },
+  "author": "Philipp Nowinski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimcli/jim/issues"
+  },
+  "homepage": "https://github.com/jimcli/jim#readme"
+}
