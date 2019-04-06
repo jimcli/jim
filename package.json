@@ -4,8 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"lint": "./node_modules/.bin/eslint .",
+		"lint:fix": "./node_modules/.bin/eslint --fix"
 	},
+	"bin": "./index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/jimcli/jim.git"
@@ -20,11 +22,21 @@
 		"babel-eslint": "^10.0.1",
 		"eslint": "^5.16.0",
 		"eslint-config-airbnb-base": "^13.1.0",
-		"eslint-config-pno": "^1.1.2",
+		"eslint-config-pno": "^1.2.2",
 		"eslint-config-prettier": "^4.1.0",
 		"eslint-plugin-html": "^5.0.3",
 		"eslint-plugin-import": "^2.16.0",
+		"eslint-plugin-node": "^8.0.1",
 		"eslint-plugin-prettier": "^3.0.1",
 		"prettier": "^1.16.4"
+	},
+	"dependencies": {
+		"chalk": "^2.4.2",
+		"import-global": "^0.1.0",
+		"log-symbols": "^2.2.0",
+		"merge": "^1.2.1",
+		"time-stamp": "^2.2.0",
+		"user-home": "^2.0.0",
+		"yargs": "^13.2.2"
 	}
 }
