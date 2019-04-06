@@ -5,10 +5,13 @@ const Settings = require('./core/settings');
 const Logger = require('./core/logger');
 const WorkflowLoader = require('./core/workflow-loader');
 
-const workflowName = argv._[0];
+const params = argv._;
+const workflowName = params.shift();
+
 const Workflow = WorkflowLoader.load(workflowName);
 
 new Workflow({
 	Logger,
 	Settings,
+	params,
 }).run();
