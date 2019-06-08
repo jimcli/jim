@@ -47,6 +47,20 @@ class Settings {
 	get config() {
 		return this._config;
 	}
+
+	get global() {
+		if (Object.prototype.hasOwnProperty.call(this._config, 'global')) {
+			return this._config.global;
+		}
+		return {};
+	}
+
+	get workflows() {
+		if (Object.prototype.hasOwnProperty.call(this._config, 'workflows')) {
+			return this._config.workflows;
+		}
+		return {};
+	}
 }
 
 const instance = new Settings();
