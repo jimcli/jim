@@ -4,6 +4,7 @@ const chalk = require('chalk');
 const logSymbols = require('log-symbols');
 const { argv } = require('yargs');
 const timestamp = require('time-stamp');
+const ora = require('ora');
 
 /**
  * Jim's logging-module
@@ -89,5 +90,21 @@ module.exports = class Logger {
 	 */
 	static getTimestamp() {
 		return chalk.dim(chalk.white(`[${timestamp('HH:mm:ss')}]`));
+	}
+
+	/**
+	 * Displays a loading spinner
+	 *
+	 * @param {String} _message Message to display next to the loading spinner
+	 */
+	static showLoadingSpinner(_message) {
+		this._spinner = ora(_message).start();
+	}
+
+	/**
+	 * Removes the lodaing spinner
+	 */
+	static removeLoadingSpinner() {
+		this._spinner.stop();
 	}
 };
