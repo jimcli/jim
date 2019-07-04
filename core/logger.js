@@ -102,7 +102,7 @@ module.exports = class Logger {
 	}
 
 	/**
-	 * Removes the lodaing spinner
+	 * Removes the loading spinner
 	 */
 	static removeLoadingSpinner() {
 		this._spinner.stop();
