@@ -1,7 +1,7 @@
 const importGlobal = require('import-global');
 const chalk = require('chalk');
+const Logger = require('@jimcli/logger');
 const Settings = require('./settings');
-const Logger = require('./logger');
 
 /**
  * The workflowloader is responsible for locating and loading workflow-packages

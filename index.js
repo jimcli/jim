@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const { argv } = require('yargs');
+const Logger = require('@jimcli/logger');
 const Settings = require('./core/settings');
-const Logger = require('./core/logger');
 const WorkflowLoader = require('./core/workflow-loader');
 
 const params = argv._;
