@@ -34,7 +34,7 @@
 		"@jimcli/logger": "^1.0.0",
 		"chalk": "^2.4.2",
 		"import-global": "^0.1.0",
-		"merge": "^1.2.1",
+		"merge": "^2.1.1",
 		"user-home": "^2.0.0",
 		"yargs": "^13.2.2"
 	}
