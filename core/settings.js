@@ -27,6 +27,12 @@ class Settings {
 		const globalPath = path.join(userHome, '.jimrc.js');
 		if (fs.existsSync(globalPath)) {
 			globalConfig = require(globalPath);
+		} else {
+			fs.copyFileSync(
+				path.join(__dirname, 'boilerplate', 'jimrc.example.js'),
+				globalPath
+			);
+			globalConfig = require(globalPath);
 		}
 		const localPath = path.join(process.cwd(), '.jimrc.js');
 		if (fs.existsSync(localPath)) {
