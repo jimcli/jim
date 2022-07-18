@@ -32,7 +32,7 @@
 	},
 	"dependencies": {
 		"@jimcli/logger": "^1.0.0",
-		"chalk": "^5.0.1",
+		"chalk": "^4.1.2",
 		"import-global": "^0.1.0",
 		"merge": "^2.1.1",
 		"user-home": "^2.0.0",
